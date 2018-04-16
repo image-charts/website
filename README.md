@@ -1,16 +1,12 @@
-# Image-Charts website
+# [Image-Charts website](https://www.image-charts.com)
 
+This repository contains the website of image-charts.com.
 
 # How to release a new version
 
 ```
 npm run release:patch
 ```
-
-then update the version number in the /charts (deploy/\*.yml) project.
-
-# image-charts.com website
-This repository contains the landing page of image-charts.com
 
 Technologies used :
 
