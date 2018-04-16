@@ -1,0 +1,99 @@
+.nav {
+  @include clearfix;
+  position: absolute;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  padding: 10px 50px 0 50px;
+
+  top: -120px;
+  transition: top 1s;
+}
+
+.nav__brand {
+  float: left;
+  line-height: 110px;
+
+  color: $font-color-light;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.nav__tabs {
+  float: right;
+  line-height: 110px;
+
+  font-size: 11px;
+  font-family: $font-style;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+
+  li {
+    display: inline-block;
+
+    & + li {
+      margin-left: 20px;
+    }
+  }
+
+  a {
+    color: $font-color;
+    &:hover {
+      color: $font-color-light;
+    }
+  }
+}
+
+.nav__tab--main {
+  a {
+    color: $font-color-light;
+  }
+}
+
+.nav--fixed {
+  top: 0;
+  .nav__brand {
+    color: #000;
+  }
+
+  .nav__tabs a:hover {
+    color: #000;
+  }
+
+  .nav__tab--main a {
+    color: $dark-color;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .nav {
+    padding: 10px 25px 0 25px;
+    height: 60px;
+  }
+
+  .nav__brand {
+    line-height: 50px;
+  }
+
+  .nav__tabs {
+    line-height: 50px;
+  }
+
+  .nav__tabs li:not(.nav__tab--rwd) {
+    display: none;
+  }
+}
+
+.header.js-start-animate {
+  .nav {
+    top: 0;
+  }
+}

@@ -1,0 +1,144 @@
+.draggable {
+  position: relative;
+  width: 115px;
+  height: 42px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #d7dbe4;
+  cursor: ew-resize;
+  transition: width 0.3s;
+  &:hover {
+    background-color: #f2f0f1;
+  }
+  &.is-dragging {
+    width: 60px !important;
+    background-color: #f2f0f1;
+    .draggable__entitled {
+      opacity: 0;
+      left: 0;
+    }
+    .draggable__cursor {
+      left: 14px;
+    }
+    .draggable__indicator {
+      opacity: 0;
+      right: -20px;
+      animation: none;
+    }
+  }
+}
+
+.draggable__cursor {
+  position: absolute;
+  left: 5px;
+  background: #d5dce4;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  transition: left 0.3s;
+  &:focus {
+    outline: none;
+  }
+}
+
+.draggable__entitled {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.draggable__arrow {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4px;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 5px;
+    transform: rotate(45deg);
+    top: 0;
+    background-color: #959fab;
+  }
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 5px;
+    transform: rotate(135deg);
+    bottom: 0;
+    background-color: #959fab;
+  }
+  &.draggable__arrow--left {
+    transform: rotate(180deg);
+    left: 12px;
+  }
+  &.draggable__arrow--right {
+    right: 12px;
+  }
+}
+
+.draggable__indicator {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: 2px;
+  width: 42px;
+  background-color: #d7dbe4;
+  right: -62px;
+  transition: all 0.3s;
+  animation: indicatorAnimation 1.1s infinite;
+  animation-delay: 2s;
+  &:after,
+  &:before {
+    position: absolute;
+    right: 0;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #d7dbe4;
+  }
+  &:before {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+  }
+  &:after {
+    right: -1px;
+    transform: rotate(-45deg);
+    transform-origin: bottom right;
+  }
+}
+
+@keyframes indicatorAnimation {
+  0% {
+    right: -62px;
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    right: -102px;
+    opacity: 0.1;
+  }
+}
+
+.draggable__indicator--hide .draggable__indicator {
+  display: none;
+}

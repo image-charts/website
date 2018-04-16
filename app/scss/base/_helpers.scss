@@ -1,0 +1,33 @@
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.centered {
+  text-align: center;
+}
+
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.h-invisible {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 700px;
+  }
+}

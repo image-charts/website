@@ -1,0 +1,26 @@
+.form {
+  input[type="text"],
+  input[type="email"] {
+    border: 1px solid $font-color-medium;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+}
+
+.form__field-group {
+  label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+#mc_embed_signup input.mce_inline_error {
+  border-color: #e45b5b !important;
+}

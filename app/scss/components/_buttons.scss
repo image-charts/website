@@ -1,0 +1,47 @@
+.btn {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 35px;
+  padding: 12px 28px;
+  transition: all 0.15s ease-out;
+  font-size: 0.8rem;
+
+  & + .btn {
+    margin-left: 10px;
+  }
+}
+
+.btn__primary {
+  border-color: $text-color-light;
+  color: $font-color-light;
+  background-color: inherit;
+
+  &:hover {
+    border-color: $font-color-light;
+  }
+
+  &.btn__primary--inactive {
+    border-color: transparent;
+    pointer-events: none;
+  }
+
+  .btn__primary--emoji {
+    font-size: 2em;
+    vertical-align: middle;
+  }
+
+  &.btn__primary--dark {
+    color: $font-color;
+    border-color: $dark-color;
+    &:hover {
+      color: #000;
+      border-color: #000;
+    }
+  }
+}
+
+.btn__plained {
+  border-color: $font-color-light;
+  background-color: $font-color-light;
+  color: $dark-color;
+}

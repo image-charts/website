@@ -1,0 +1,43 @@
+{
+  "name": "image-charts-website",
+  "website": {
+    "name": "Image Charts",
+    "description": "No more server-side rendering pain, 1 url = 1 chart",
+    "title": "Charts, simple as a URL"
+  },
+  "private": true,
+  "version": "5.1.3",
+  "scripts": {
+    "start": "node static-server",
+    "start:dev": "rm -rf dist && parcel app/*.pug",
+    "postinstall": "(cd node_modules/parcel-bundler && npm i && npm run build)",
+    "build":
+      "rm -rf dist && parcel build --detailed-report --no-source-maps --no-cache app/*.pug",
+    "printenv": "printenv",
+    "release:patch": "npm-release patch",
+    "release:minor": "npm-release minor",
+    "release:major": "npm-release major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/image-charts/website.git"
+  },
+  "author": "Kevin Jaffre & FG Ribreau",
+  "license": "Image-Charts",
+  "homepage": "https://github.com/image-charts/website",
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "npm-release": "^1.0.0",
+    "parcel-bundler": "github:parcel-bundler/parcel#multi-entry",
+    "pug": "^2.0.3"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^16.3.5",
+    "finalhandler": "^0.5.0",
+    "jquery": "^3.1.0",
+    "jquery-smooth-scroll": "^1.7.2",
+    "jquery-ui": "^1.12.1",
+    "lodash.throttle": "^4.1.0",
+    "serve-static": "^1.11.1"
+  }
+}

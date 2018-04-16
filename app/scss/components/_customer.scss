@@ -1,0 +1,68 @@
+.customer {
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.customer__wrapper {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+}
+
+.customer__item {
+  margin: 0 5px;
+  width: 300px;
+  height: 330px;
+  border: 1px solid $color-separator;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  flex-shrink: 0;
+  cursor: default;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    outline: inherit;
+  }
+  &:hover {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.customer__picture {
+  margin-top: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.customer__name {
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.customer__job {
+  margin-top: 2px;
+  color: $dark-color;
+  font-weight: 500;
+}
+
+.customer__testimonials {
+  margin-top: 10px;
+}

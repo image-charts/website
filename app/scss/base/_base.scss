@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font: 15px/1.4 $font-base, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: $bg-color;
+  color: $font-color;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.15px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  color: $dark-color;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  body,
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 700px) {
+  body,
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  body,
+  html {
+    font-size: 11px;
+  }
+}

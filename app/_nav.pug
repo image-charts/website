@@ -1,0 +1,24 @@
+if frontPage
+  nav.nav
+    .nav__brand <a href="/">Image <span>Charts</span></a>
+    ul.nav__tabs
+      li
+        a(href='/#feature') Features
+      li
+        a(href='/#pricing') Pricing
+      li
+        a(href='/documentation') Documentation
+      li.nav__tab--rwd.nav__tab--main
+        a(href='/documentation#getting-started') Getting started
+else
+  nav.nav.nav--fixed
+    .nav__brand <a href="/">Image <span>Charts</span></a>
+    ul.nav__tabs
+      li
+        a(href='/#feature') Features
+      li
+        a(href='/#pricing') Pricing
+      li
+        a(href='/documentation') Documentation
+      li.nav__tab--rwd.nav__tab--main
+        a(href='/documentation#getting-started') Getting started
