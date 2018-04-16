@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node static-server",
     "start:dev": "rm -rf dist && parcel app/*.pug",
-    "postinstall": "(cd node_modules/parcel-bundler && npm i && npm run build)",
+    "postinstall":
+      "(cd node_modules/parcel-bundler && npm i && echo 'installing yarn for parcel (quick-fix)' && npm i yarn && npm run build)",
     "build":
       "rm -rf dist && parcel build --detailed-report --no-source-maps --no-cache app/*.pug",
     "printenv": "printenv",
