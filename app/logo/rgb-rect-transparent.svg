@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="190px" viewBox="0 0 190 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFE2AF" offset="0%"></stop>
+            <stop stop-color="#FCC7BD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F77E51" offset="0%"></stop>
+            <stop stop-color="#F25864" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#CDDDFF" offset="0%"></stop>
+            <stop stop-color="#D0DAFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#849FFF" offset="0%"></stop>
+            <stop stop-color="#856FFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#00DF84" offset="0%"></stop>
+            <stop stop-color="#00B6C8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo">
+            <g id="Shape">
+                <path d="M20,0 L170,0 C181.045,0 190,8.955 190,20 L190,170 C190,181.045 181.045,190 170,190 L20,190 C8.955,190 0,181.045 0,170 L0,20 C0,8.955 8.955,0 20,0 Z M20,20 L20,150 L170,150 L170,20 L20,20 Z" id="Combined-Shape" fill="#273078"></path>
+                <g id="_1" transform="translate(45.000000, 45.000000)">
+                    <path d="M20,10 C20,4.48 15.52,0 10,0 C4.48,0 0,4.48 0,10 L0,70 C0,75.52 4.48,80 10,80 C15.52,80 20,75.52 20,70 L20,10 Z" id="Background" fill="url(#linearGradient-1)"></path>
+                    <path d="M20,70 C20,64.48 15.52,60 10,60 C4.48,60 0,64.48 0,70 C0,75.52 4.48,80 10,80 C15.52,80 20,75.52 20,70 Z" id="Dots" fill="url(#linearGradient-2)"></path>
+                </g>
+                <g id="_2" transform="translate(85.000000, 45.000000)">
+                    <path d="M20,10 C20,4.48 15.52,0 10,0 C4.48,0 0,4.48 0,10 L0,70 C0,75.52 4.48,80 10,80 C15.52,80 20,75.52 20,70 L20,10 Z" id="Background1" fill="url(#linearGradient-3)"></path>
+                    <path d="M20,50 C20,44.48 15.52,40 10,40 C4.48,40 0,44.48 0,50 L0,70 C0,75.52 4.48,80 10,80 C15.52,80 20,75.52 20,70 L20,50 Z" id="Dots1" fill="url(#linearGradient-4)"></path>
+                </g>
+                <path d="M145,55 C145,49.48 140.52,45 135,45 C129.48,45 125,49.48 125,55 L125,115 C125,120.52 129.48,125 135,125 C140.52,125 145,120.52 145,115 L145,55 Z" id="_3" fill="url(#linearGradient-5)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
