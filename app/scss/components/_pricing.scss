@@ -3,13 +3,13 @@
   display: -ms-flex;
   display: flex;
   align-items: top;
+  padding-top: 50px;
 }
 
 .pricing__item {
   padding: 30px;
   text-align: center;
   width: 320px;
-  padding-top: 100px;
 }
 
 .pricing__title {
@@ -81,6 +81,8 @@
 }
 
 .startup {
+  // padding-top: 50px;
+
   strong {
     color: $text-color-light;
   }
