@@ -87,7 +87,7 @@ $(function() {
 
     function chatAnimation(text) {
       const CHART_URL =
-        'https://image-charts.com/chart?chtt=%20Server%201%20CPU%20usage&cht=bvs&chd=s:93zyvneTTOMJMLIJFHEAECFJGHDBFCFIERcgnpy45879&chs=368x250&chof=.png&chf=bg,s,fafafa|b0,lg,45,ffeb3b,0.2,f44336,1&chts=000000,18&chxt=x,y&chxl=0:|Aug||Sep&chan=1300,easeOutElastic&icac=fgribreau&ichm=e84471e74a11c42b6170d5e38d4044debece05e9b4538a034fec5246db63cb2c';
+        'https://image-charts.com/chart?cht=bvg&chd=t:10,15,25,30,40,80&chs=736x500&chxt=x,y&chxl=0:%7CMarch%20%2718%7CApril%20%2718%7CMay%20%2718%7CJune%20%2718%7CJuly%20%2718%7CAugust%20%2718%7C&chdl=Visitors%20(in%20thousands%29&chf=b0,lg,90,05B142,1,0CE858,0.2&chxs=1N**K&chtt=Visitors%20report&chma=0,0,10,10&chl=%7C%7C%7C%7C%2033%25%20!%7Cx2%20!&chan=1600,easeOutBack&icac=fgribreau&ichm=e54deaff95a684371e50f24282e0cd5157d216b46f19d48ec3efa4e8f12ed1d3';
       typeWriter(chatMessage, '.chat__message', 0, function() {
         chatContent.innerHTML +=
           '<div class="chat__anwser chat__anwser--reverse">' +
