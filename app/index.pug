@@ -234,6 +234,7 @@ block content
                     .map__popover-number 0
               img.feature__image(src='img/world-map.png', alt='')
 
+    include _pricing.pug
     section.section.section--fullheight.section--flex
       .section__title
         .centered
@@ -305,66 +306,3 @@ block content
             span.draggable__arrow.draggable__arrow--left
             span.draggable__arrow.draggable__arrow--right
           span.draggable__indicator
-
-    section#pricing.section.section--dark.section--fullheight
-      .section__title
-        .centered
-          h2.subtitle Pricing
-      .section__container.section--sibfooter
-        .startup
-          | You are a bootstrapping a <strong>startup 🦄 </strong> or in <strong>education 🎓</strong>? Need a discount 💸? <a href="mailto:support@image-charts.com">Contact us</a>!
-        .pricing
-          .pricing__item
-            div.pricing__title Community
-            div.pricing__price Free forever
-            ul.pricing__content
-              li Unlimited chart generation
-              li Subsecond latency
-              li Worldwide CDN
-              li HTTP/2 support
-              li WebP and Gif support
-              li Image-charts watermark 😢
-              li Image-charts.com domain
-              li 
-                a(style="text-decoration: underline", href='//stackoverflow.com/questions/tagged/image-charts',rel="nofollow") Community support
-              li &nbsp;
-              li &nbsp;
-              li &nbsp;
-            a.btn.btn__primary(href='//documentation.image-charts.com/') No need to sign up, use it now!
-
-          .pricing__item.pricing__item--highlight
-            div.pricing__title Enterprise
-            div.pricing__price 49€/month
-            ul.pricing__content
-              li Unlimited chart generation
-              li Subsecond latency
-              li Worldwide CDN
-              li HTTP/2 support
-              li WebP and Gif support
-              li.win
-                a(href="//documentation.image-charts.com/enterprise") No more watermark  🎉
-              li Your domain
-              li Priority support
-              li Priorize roadmap
-              li &nbsp;
-              li &nbsp;
-            a.btn.btn__primary(href="//image-charts.com/enterprise/customers?plan_id=enterprise-2016") Subscribe now
-
-          .pricing__item
-            div.pricing__title On-Premise
-            //- div.pricing__price 169€/month
-            div.pricing__price 99€/month
-            ul.pricing__content
-              li Unlimited chart generation
-              li Subsecond latency
-              li Worldwide CDN
-              li HTTP/2 support
-              li WebP and Gif support
-              li.win
-                a(href="//documentation.image-charts.com/enterprise") No more watermark  🎉
-              li Your domain
-              li Priority support
-              li Priorize roadmap
-              li Your network
-              li Your data 🔒
-            a.btn.btn__primary.open-button(href="javascript:;") Subscribe now
