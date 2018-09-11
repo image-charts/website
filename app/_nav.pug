@@ -1,24 +1,11 @@
-if frontPage
-  nav.nav
-    .nav__brand <a href="/">Image <span>Charts</span></a>
-    ul.nav__tabs
-      li
-        a(href='/#feature') Features
-      li
-        a(href='/#pricing') Pricing
-      li
-        a(href='//documentation.image-charts.com') Documentation
-      li.nav__tab--rwd.nav__tab--main
-        a(href='//documentation.image-charts.com/') Getting started
-else
-  nav.nav.nav--fixed
-    .nav__brand <a href="/">Image <span>Charts</span></a>
-    ul.nav__tabs
-      li
-        a(href='/#feature') Features
-      li
-        a(href='/#pricing') Pricing
-      li
-        a(href='//documentation.image-charts.com') Documentation
-      li.nav__tab--rwd.nav__tab--main
-        a(href='//documentation.image-charts.com/') Getting started
+nav.nav(class=frontPage ? '' : 'nav--fixed')
+  .nav__brand <a href="/">Image <span>Charts</span></a>
+  ul.nav__tabs
+    li
+      a(href='/#feature') Features
+    li
+      a(href='/#pricing') Pricing
+    li
+      a(href='//documentation.image-charts.com/gallery/') Examples
+    li.nav__tab--rwd.nav__tab--main
+      a(href='//documentation.image-charts.com/') Getting started
