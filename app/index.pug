@@ -234,12 +234,24 @@ block content
                     .map__popover-number 0
               img.feature__image(src='img/world-map.png', alt='')
 
+    section.section.section--flex
+      .section__title
+        .centered
+          h2.subtitle Our customers generate more than <strong>1 million charts</strong> each month
+      .section__container
+        .company
+          each company in 'discoverychannel.fr,sanebox.com,opteo.com,salesforce.com,ortec.com,rxinsider.com,rynekpierwotny.com,redsmin.com,xfinity.com,zacaris.com,awesomejar.com,mitsucari.com,rightrelevance.com,spothopperapp.com,raymourflanigan.com,podio.com'.split(',')
+            a.company__item(href="http://"+company, rel="nofollow")
+              img(src="https://logo.clearbit.com/" + company + "?size=128&greyscale=true")
+              span=company
+
     include _pricing.pug
+    
     section.section.section--fullheight.section--flex
       .section__title
         .centered
           h2.subtitle Join hundreds of developers
-          p.text They love it!
+          p.text We've built Image-Charts for them, they love us back!
       .section__container
         .customer
           .customer__wrapper
