@@ -12,14 +12,14 @@
 
 .nav__brand {
   float: left;
-  line-height: 110px;
 
-  color: $font-color-light;
-  text-transform: uppercase;
-  font-weight: 300;
-
-  span {
-    font-weight: 700;
+  a {
+    background: no-repeat url("../logo/rgb-bw@512.png") 50% 50%;
+    background-size: contain;
+    text-indent: -999px;
+    display: block;
+    height: 100px;
+    width: 150px;
   }
 }
 
