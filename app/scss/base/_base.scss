@@ -22,6 +22,25 @@ ul {
   padding: 0;
 }
 
+ul.decimal {
+  li {
+    list-style: decimal;
+  }
+}
+
+ul.disc {
+  li {
+    list-style: disc;
+  }
+}
+
+ul.decimal,
+ul.disc {
+  li {
+    padding-bottom: 15px;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -50,5 +69,20 @@ strong {
   body,
   html {
     font-size: 11px;
+  }
+}
+
+table {
+  width: 100%;
+
+  td,
+  th {
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+
+  th {
+    background-color: $font-color;
+    color: $font-color-light;
   }
 }

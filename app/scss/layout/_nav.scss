@@ -1,6 +1,5 @@
 .nav {
   @include clearfix;
-  position: absolute;
   left: 0;
   height: 120px;
   width: 100%;
@@ -56,45 +55,54 @@
   }
 }
 
-.nav--fixed {
-  top: 0;
-  .nav__brand {
-    color: #000;
-  }
-
-  .nav__tabs a:hover {
-    color: #000;
-  }
-
-  .nav__tab--main a {
-    color: $dark-color;
-    &:hover {
-      color: #000;
-    }
-  }
-}
-
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1200px) {
   .nav {
-    padding: 10px 25px 0 25px;
-    height: 60px;
+    position: relative;
+    height: auto;
   }
 
   .nav__brand {
-    line-height: 50px;
+    float: none;
   }
 
   .nav__tabs {
-    line-height: 50px;
+    float: none;
+    line-height: 40px;
   }
 
-  .nav__tabs li:not(.nav__tab--rwd) {
-    display: none;
+  .nav__tabs li,
+  .nav__tabs li + li {
+    display: block;
+    margin: 0;
   }
 }
 
 .header.js-start-animate {
   .nav {
     top: 0;
+  }
+}
+
+.nav.nav--black {
+  .nav__brand {
+    a {
+      background: no-repeat url("../logo/rgb-transparent@512.png") 50% 50%;
+      background-size: contain;
+    }
+  }
+
+  .nav__tabs {
+    a {
+      color: $font-color-medium;
+      &:hover {
+        color: $font-color;
+      }
+    }
+  }
+
+  .nav__tab--main {
+    a {
+      color: $font-color;
+    }
   }
 }

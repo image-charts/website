@@ -103,3 +103,9 @@
     background: whitesmoke;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .company a.company__item {
+    padding: 20px 0px;
+  }
+}
