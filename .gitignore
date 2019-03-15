@@ -4,3 +4,4 @@ dist
 
 npm-debug.log
 yarn-error.log
+app/img/customers/*.png

@@ -10,7 +10,9 @@
   "scripts": {
     "start": "node static-server",
     "start:dev": "rm -rf dist && parcel serve app/*.pug",
-    "build": "rm -rf dist && parcel build --detailed-report --no-source-maps --no-cache app/*.pug",
+    "build": "npm run --silent build:update-customers-logo && npm run --silent build:website",
+    "build:update-customers-logo": "node scripts/update-customers-logo.js",
+    "build:website": "rm -rf dist && parcel build --detailed-report --no-source-maps --no-cache app/*.pug",
     "printenv": "printenv",
     "release:patch": "npm-release patch",
     "release:minor": "npm-release minor",
@@ -24,6 +26,7 @@
   "license": "Image-Charts",
   "homepage": "https://github.com/image-charts/website",
   "devDependencies": {
+    "bluebird": "^3.5.3",
     "node-sass": "^4.8.3",
     "npm-release": "^1.0.0",
     "parcel": "^1.9.7",
@@ -34,6 +37,7 @@
     "jquery": "^3.1.0",
     "jquery-smooth-scroll": "^1.7.2",
     "jquery-ui": "^1.12.1",
-    "lodash.throttle": "^4.1.0"
+    "lodash.throttle": "^4.1.0",
+    "request-promise": "^4.2.2"
   }
 }
