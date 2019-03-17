@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node static-server",
     "start:dev": "rm -rf dist && parcel serve app/*.pug",
-    "build": "npm run --silent build:update-customers-logo && npm run --silent build:website",
+    "build": "npm run --silent build:website",
     "build:update-customers-logo": "node scripts/update-customers-logo.js",
     "build:website": "rm -rf dist && parcel build --detailed-report --no-source-maps --no-cache app/*.pug",
     "printenv": "printenv",
