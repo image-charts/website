@@ -16,11 +16,6 @@
   color: $font-color-light;
   background-color: inherit;
 
-  &.active{
-    border: 1.5px solid;
-    border-color: $font-color-light;
-  }
-
   &:hover {
     border-color: $font-color-light;
   }
