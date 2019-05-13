@@ -19,7 +19,7 @@ Technologies used :
 - Clone this repository
 - `npm install`
 - `npm run start:dev`
-- then open : `http://localhost:XXXX`
+- then open : `http://localhost:XXXX/index.html`
 
 ## How to Build
 
