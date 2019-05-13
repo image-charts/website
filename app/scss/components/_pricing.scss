@@ -1,3 +1,17 @@
+.pricing-switch-wrapper{
+  padding-top: 25px;
+}
+
+.pricing-switch{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.promo{
+  padding-left: 5px;
+}
+
 .pricing {
   display: -webkit-flex;
   display: -ms-flex;
@@ -54,6 +68,8 @@
     }
   }
 }
+
+
 
 .pricing__item--highlight {
   margin-left: 20px;
