@@ -8,16 +8,17 @@
   align-items: center;
   flex-direction: row;
 }
-.pricing-switch>input[type="radio"]+label{
-  margin: 3px;
-}
+
 .pricing-switch>input[type="radio"]:checked+label{
   border: 1px solid $font-color-light;
+  color: $font-color-light;
 }
-#month, #year{
+
+#pricing_by_month, #pricing_by_year{
   display: none;
 }
-.promo{
+
+.pricing_by_promo{
   padding-left: 5px;
 }
 
