@@ -8,10 +8,11 @@
   align-items: center;
   flex-direction: row;
 }
-
+.pricing-switch>input[type="radio"]+label{
+  margin: 3px;
+}
 .pricing-switch>input[type="radio"]:checked+label{
-  border: 1.5px solid;
-  border-color: $font-color-light;
+  border: 1px solid $font-color-light;
 }
 #month, #year{
   display: none;
