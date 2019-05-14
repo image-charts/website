@@ -1,18 +1,25 @@
 var monthButton = document.getElementById("month");
 var yearButton = document.getElementById("year");
-var x = document.getElementById("cost");
+var cost = document.getElementById("cost");
+var urlChang = document.getElementById("urlChang");
 
 monthButton.addEventListener("click", function(){
-    if (x.innerHTML == "529€/month") {
-      x.innerHTML = "49€/month";
+    if (cost.innerHTML == "529€/month" && urlChang.href == "https://image-charts.com/enterprise/customers?plan_id=enterprise-yearly-2016") {
+      cost.innerHTML = "49€/month";
+      urlChang.href = "https://image-charts.com/enterprise/customers?plan_id=enterprise-2016";
     }
 });
 
 yearButton.addEventListener("click", function(){
-    if (x.innerHTML == "49€/month") {
-      x.innerHTML = "529€/month";
+    if (cost.innerHTML == "49€/month" && urlChang.href == "https://image-charts.com/enterprise/customers?plan_id=enterprise-2016") {
+      cost.innerHTML = "529€/month";
+      urlChang.href = "https://image-charts.com/enterprise/customers?plan_id=enterprise-yearly-2016";
     }
 });
+
+
+// .href='ce_que_je_veux_a_la_place'
+
 
 
 // const plans = [{
