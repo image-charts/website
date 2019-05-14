@@ -1,16 +1,19 @@
-function changeTextMonth() {
-  var x = document.getElementById("cost");
-  if (x.innerHTML == "529€/month") {
-    x.innerHTML = "49€/month";
-  }
-};
+var monthButton = document.getElementById("month");
+var yearButton = document.getElementById("year");
+var x = document.getElementById("cost");
 
-function changeTextYear() {
-  var x = document.getElementById("cost");
-  if (x.innerHTML == "49€/month") {
-    x.innerHTML = "529€/month";
-  }
-};
+monthButton.addEventListener("click", function(){
+    if (x.innerHTML == "529€/month") {
+      x.innerHTML = "49€/month";
+    }
+});
+
+yearButton.addEventListener("click", function(){
+    if (x.innerHTML == "49€/month") {
+      x.innerHTML = "529€/month";
+    }
+});
+
 
 // const plans = [{
 // id: 'enterprise-2016',
