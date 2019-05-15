@@ -1,3 +1,49 @@
+.pricing-switch-wrapper{
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pricing-switch{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+  & label{
+    border-radius: 5px;
+  }
+
+  & label:first-of-type{
+    transition: 0s;
+    border-right: 0px solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  & label:last-of-type{
+    transition: 0s;
+    border-left: 0px solid;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+.pricing-switch>input[type="radio"]:checked+label{
+  border: 1px solid $font-color-light;
+  color: $font-color-light;
+}
+
+#pricing_by_month, #pricing_by_year{
+  display: none;
+}
+
+.pricing_discount{
+  padding-left: 5px;
+}
+
 .pricing {
   display: -webkit-flex;
   display: -ms-flex;
@@ -54,6 +100,8 @@
     }
   }
 }
+
+
 
 .pricing__item--highlight {
   margin-left: 20px;

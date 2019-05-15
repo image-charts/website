@@ -10,16 +10,16 @@ npm run release:patch
 
 Technologies used :
 
-  * Pug
-  * Sass
-  * Parcel <3
+- Pug
+- Sass
+- Parcel <3
 
 ## How to Start
 
 - Clone this repository
 - `npm install`
-- `npm run build:dev`
-- then open : `http://localhost:XXXX`
+- `npm run start:dev`
+- then open : `http://localhost:XXXX/index.html`
 
 ## How to Build
 

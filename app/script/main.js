@@ -3,6 +3,9 @@ const $ = require('jquery');
 window.$ = $;
 
 $(function() {
+  // Pricing
+  require('./pricing');
+
   if ($('body').hasClass('js-home')) {
     const TWEEN = require('@tweenjs/tween.js');
     const throttle = require('lodash.throttle');

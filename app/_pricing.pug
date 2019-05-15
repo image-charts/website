@@ -5,6 +5,14 @@ section#pricing.section.section--dark.section--fullheight
   .section__container.section--sibfooter
     .startup
       | You are a bootstrapping a <strong>startup 🦄 </strong> or in <strong>education 🎓</strong>? Need a discount 💸? <a href="mailto:support@image-charts.com">Contact us</a>!
+    .pricing-switch-wrapper
+      .pricing-switch
+        input#pricing_by_month(type='radio', name='enterprise-plan-interval', value='monthly')
+        label.btn.btn__primary(for='pricing_by_month') Pricing by month
+        input#pricing_by_year(type='radio', name='enterprise-plan-interval', value='yearly', checked='')
+        label.btn.btn__primary(for='pricing_by_year') Pricing by year
+      .pricing_discount &rarr; Save 10%
+
     .pricing
       .pricing__item
         div.pricing__title Community
@@ -17,7 +25,7 @@ section#pricing.section.section--dark.section--fullheight
           li WebP and Gif support
           li Image-charts watermark 😢
           li Image-charts.com domain
-          li 
+          li
             a(style="text-decoration: underline", href='//stackoverflow.com/questions/tagged/image-charts',rel="nofollow") Community support
           li &nbsp;
           li &nbsp;
@@ -25,7 +33,7 @@ section#pricing.section.section--dark.section--fullheight
 
       .pricing__item.pricing__item--highlight
         div.pricing__title Enterprise
-        div.pricing__price 49€/month
+        div.js-enterprise-price.pricing__price 529€/year
         ul.pricing__content
           li Unlimited chart generation
           li Subsecond latency
@@ -38,7 +46,7 @@ section#pricing.section.section--dark.section--fullheight
           li Priority support
           li Priorize roadmap
           li &nbsp;
-        a.btn.btn__primary(href="//image-charts.com/enterprise/customers?plan_id=enterprise-2016") Subscribe now
+        a.js-enterprise-subscription-url.btn.btn__primary(href="https://image-charts.com/enterprise/customers?plan_id=enterprise-yearly-2016") Subscribe now
 
       .pricing__item
         div.pricing__title On-Premise
