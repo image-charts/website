@@ -19,10 +19,8 @@ function displayPlan(plan) {
     document.querySelector(".js-enterprise-subscription-url").href = `https://image-charts.com/enterprise/customers?plan_id=${plan.id}`;
 }
 
-
-// [Input, Input]
 Array.from(document.querySelectorAll('input[name=enterprise-plan-interval]'))
-    .forEach(input => input.addEventListener("change", function (event) {
+    .forEach(input => input.addEventListener("change", function (changeIntervalPlan) {
         const selectedInterval = input.value; // "monthly" | "yearly"
         const selectedPlan = plans.find(plan => plan.interval === selectedInterval);
         displayPlan(selectedPlan);
