@@ -20,7 +20,7 @@ function displayPlan(plan) {
 }
 
 Array.from(document.querySelectorAll('input[name=enterprise-plan-interval]'))
-    .forEach(input => input.addEventListener("change", function (changeIntervalPlan) {
+    .forEach(input => input.addEventListener("change", () => {
         const selectedInterval = input.value; // "monthly" | "yearly"
         const selectedPlan = plans.find(plan => plan.interval === selectedInterval);
         displayPlan(selectedPlan);
