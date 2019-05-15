@@ -1,32 +1,38 @@
-var monthButton = document.getElementById("pricing_by_month");
-var yearButton = document.getElementById("pricing_by_year");
-var cost = document.getElementById('js-enterprise-price');
-var plan_subscription_url = document.getElementById("js-enterprise-subscription-url");
-// var cost = Array.from(document.querySelectorAll('.pricing__price')).forEach(el => el.innerText = "XXX€/YYY")
+const plans = [{
+    cost: "49€/month",
+    id: 'enterprise-2016',
+    interval: 'monthly'
+}, {
+    cost: "529€/year",
+    id: 'enterprise-yearly-2016',
+    interval: 'yearly'
+}];
+
+/**
+ *
+ * @param {object} plan
+ * @property {string} cost - Plan cost
+ * @property {string} id - stripe plan id
+ * @property {string} interval - "yearly" | "monthly
+ */
+function displayPlan(plan) {
+    document.querySelector(".js-enterprise-price").innerHTML = plan.cost;
+    document.querySelector(".js-enterprise-subscription-url").href = `https://image-charts.com/enterprise/customers?plan_id=${plan.id}`;
+}
 
 
-monthButton.addEventListener("click", function(){
-  if (cost.innerHTML == "529€/year" && plan_subscription_url.href == "https://image-charts.com/enterprise/customers?plan_id=enterprise-yearly-2016") {
-    cost.innerHTML = "49€/month";
-    plan_subscription_url.href = "https://image-charts.com/enterprise/customers?plan_id=enterprise-2016";
-  }
-});
+// [Input, Input]
+Array.from(document.querySelectorAll('input[name=enterprise-plan-interval]'))
 
-yearButton.addEventListener("click", function(){
-  if (cost.innerHTML == "49€/month" && plan_subscription_url.href == "https://image-charts.com/enterprise/customers?plan_id=enterprise-2016") {
-      cost.innerHTML = "529€/year";
-      plan_subscription_url.href = "https://image-charts.com/enterprise/customers?plan_id=enterprise-yearly-2016";
-  }
-});
+// listen for change on each input
+//     .forEach(function (input) {
+//         return input.addEventListener("change", function (event) {
+//             console.log(event);
+//         })
+//     })
 
-// const month = {
-//   cost: '49€/month',
-//   plan_id: 'enterprise-2016',
-//   interval: 'monthly'
-// };
-//
-// const year = [{
-//   cost: '529€/year',
-//   plan_id: 'enterprise-yearly-2016',
-//   interval: 'yearly'
-// }];
+    .forEach(input => input.addEventListener("change", function (event) {
+        const selectedInterval = input.value; // "monthly" | "yearly"
+        const selectedPlan = plans.find(plan => plan.interval === selectedInterval);
+        displayPlan(selectedPlan);
+    }));
