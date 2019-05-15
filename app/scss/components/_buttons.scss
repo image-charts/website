@@ -40,24 +40,6 @@
   }
 }
 
-.btn__pricing {
-  border-radius: 5px;
-
-  &.btn__pricing--right{
-    border-left: 0px solid;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-
-  &.btn__pricing--left{
-    border-right: 0px solid;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-}
-
-
-
 .btn__plained {
   border-color: $font-color-light;
   background-color: $font-color-light;

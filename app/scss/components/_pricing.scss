@@ -1,5 +1,9 @@
 .pricing-switch-wrapper{
   padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 .pricing-switch{
@@ -7,6 +11,22 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+
+  & label{
+    border-radius: 5px;
+  }
+
+  & label:first-of-type{
+    border-right: 0px solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  & label:last-of-type{
+    border-left: 0px solid;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
 }
 
 .pricing-switch>input[type="radio"]:checked+label{
@@ -18,7 +38,7 @@
   display: none;
 }
 
-.pricing_by_promo{
+.pricing_discount{
   padding-left: 5px;
 }
 
