@@ -17,12 +17,14 @@
   }
 
   & label:first-of-type{
+    transition: 0s;
     border-right: 0px solid;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
 
   & label:last-of-type{
+    transition: 0s;
     border-left: 0px solid;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;

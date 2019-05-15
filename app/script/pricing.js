@@ -9,11 +9,10 @@ const plans = [{
 }];
 
 /**
- *
  * @param {object} plan
  * @property {string} cost - Plan cost
  * @property {string} id - stripe plan id
- * @property {string} interval - "yearly" | "monthly
+ * @property {string} interval - "yearly" | "monthly"
  */
 function displayPlan(plan) {
     document.querySelector(".js-enterprise-price").innerHTML = plan.cost;
@@ -23,14 +22,6 @@ function displayPlan(plan) {
 
 // [Input, Input]
 Array.from(document.querySelectorAll('input[name=enterprise-plan-interval]'))
-
-// listen for change on each input
-//     .forEach(function (input) {
-//         return input.addEventListener("change", function (event) {
-//             console.log(event);
-//         })
-//     })
-
     .forEach(input => input.addEventListener("change", function (event) {
         const selectedInterval = input.value; // "monthly" | "yearly"
         const selectedPlan = plans.find(plan => plan.interval === selectedInterval);
