@@ -8,6 +8,15 @@ const plans = [{
     interval: 'yearly'
 }];
 
+const plansplus = [{
+    cost: "149€/month",
+    id: 'plan_FG5JpvqjJwV1Uz',
+    interval: 'monthly'
+}, {
+    cost: "1600€/year",
+    id: 'plan_FG5LuPl9Mi1fmD',
+    interval: 'yearly'
+}];
 /**
  * @param {object} plan
  * @property {string} cost - Plan cost
@@ -19,25 +28,6 @@ function displayPlan(plan) {
     document.querySelector(".js-enterprise-subscription-url").href = `https://image-charts.com/enterprise/customers?plan_id=${plan.id}`;
 }
 
-
-Array.from(document.querySelectorAll('input[name=enterprise-plan-interval]'))
-    .forEach(input => input.addEventListener("change", () => {
-        const selectedInterval = input.value; // "monthly" | "yearly"
-        const selectedPlan = plans.find(plan => plan.interval === selectedInterval);
-        displayPlan(selectedPlan);
-    }));
-
-
-const plansplus = [{
-    cost: "149€/month",
-    id: 'plan_FG5JpvqjJwV1Uz',
-    interval: 'monthly'
-}, {
-    cost: "1600€/year",
-    id: 'plan_FG5LuPl9Mi1fmD',
-    interval: 'yearly'
-}];
-
 function displayPlanplus(planplus) {
     document.querySelector(".js-enterprise-plus-price").innerHTML = planplus.cost;
     document.querySelector(".js-enterprise-plus-subscription-url").href = `https://image-charts.com/enterprise/customers?plan_id=${planplus.id}`;
@@ -47,6 +37,12 @@ function displayPlanplus(planplus) {
 Array.from(document.querySelectorAll('input[name=enterprise-plan-interval]'))
     .forEach(input => input.addEventListener("change", () => {
         const selectedInterval = input.value; // "monthly" | "yearly"
+        const selectedPlan = plans.find(plan => plan.interval === selectedInterval);
         const selectedPlanPlus = plansplus.find(planplus => planplus.interval === selectedInterval);
+        displayPlan(selectedPlan);
         displayPlanplus(selectedPlanPlus);
     }));
+
+
+
+
