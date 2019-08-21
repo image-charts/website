@@ -29,11 +29,12 @@ section#pricing.section.section--dark.section--fullheight
             a(style="text-decoration: underline", href='//stackoverflow.com/questions/tagged/image-charts',rel="nofollow") Community support
           li &nbsp;
           li &nbsp;
+          li &nbsp;
         a.btn.btn__primary(href='//documentation.image-charts.com/') No need to sign up, use it now!
 
       .pricing__item.pricing__item--highlight
-        div.pricing__title Enterprise
-        div.js-enterprise-price.pricing__price 529€/year
+        .pricing__title Enterprise
+        .js-enterprise-price.pricing__price(data-type="ENTERPRISE") 529&euro;/year
         ul.pricing__content
           li Unlimited chart generation
           li Subsecond latency
@@ -41,16 +42,17 @@ section#pricing.section.section--dark.section--fullheight
           li HTTP/2 support
           li WebP and Gif support
           li.win
-            a(href="//documentation.image-charts.com/enterprise") No more watermark  🎉
+            a(href='//documentation.image-charts.com/enterprise') No more watermark  &#x1F389;
           li Your domain
           li Priority support
           li Priorize roadmap
           li &nbsp;
-        a.js-enterprise-subscription-url.btn.btn__primary(href="https://image-charts.com/enterprise/customers?plan_id=enterprise-yearly-2016") Subscribe now
+          li &nbsp;
+        a.js-enterprise-subscription-url.btn.btn__primary(href='https://image-charts.com/enterprise/customers?plan_id=enterprise-yearly-2016', data-type="ENTERPRISE") Subscribe now
 
-      .pricing__item
-        div.pricing__title On-Premise
-        div.pricing__price Starting at 1199€/year
+      .pricing__item.pricing__item--highlight
+        .pricing__title Enterprise+
+        .js-enterprise-price.pricing__price(data-type="ENTERPRISE_PLUS") 1600&euro;/year
         ul.pricing__content
           li Unlimited chart generation
           li Subsecond latency
@@ -58,9 +60,29 @@ section#pricing.section.section--dark.section--fullheight
           li HTTP/2 support
           li WebP and Gif support
           li.win
-            a(href="//documentation.image-charts.com/enterprise") No more watermark  🎉
+            a(href='//documentation.image-charts.com/enterprise') No more watermark &#x1F389;
+          li Your domain
+          li Priority support
+          li Priorize roadmap
+          li.win 
+            a(href='//documentation.image-charts.com/reference/retina') Retina support
+          li (Upcoming) Multi-graph support
+        a.js-enterprise-subscription-url.btn.btn__primary(data-type="ENTERPRISE_PLUS", href='https://image-charts.com/enterprise/customers?plan_id=plan_FG5LuPl9Mi1fmD') Subscribe now
+
+      .pricing__item
+        div.pricing__title On-Premise
+        div.pricing__price Starting at 2900&euro;/year
+        ul.pricing__content
+          li Unlimited chart generation
+          li Subsecond latency
+          li Worldwide CDN
+          li HTTP/2 support
+          li WebP and Gif support
+          li.win
+            a(href="//documentation.image-charts.com/enterprise") No more watermark &#x1F389;
           li Your domain
           li Priority support
           li Priorize roadmap
           li Your infrastructure
+          li &nbsp;
         a.btn.btn__primary.open-button(href="javascript:;") Subscribe now
