@@ -9,7 +9,7 @@ const plans = [{
     interval: 'monthly'
 }, {
     type: planTypes.ENTERPRISE,
-    cost: "529€/year",
+    cost: "44.08€/month, billed annually",
     id: 'enterprise-yearly-2016',
     interval: 'yearly'
 }, {
@@ -19,7 +19,7 @@ const plans = [{
     interval: 'monthly'
 }, {
     type: planTypes.ENTERPRISE_PLUS,
-    cost: "1600€/year",
+    cost: "133.33€/month, billed annually",
     id: 'plan_FG5LuPl9Mi1fmD',
     interval: 'yearly'
 }];
