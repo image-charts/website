@@ -4,22 +4,22 @@ const planTypes = {
 };
 const plans = [{
     type: planTypes.ENTERPRISE,
-    cost: "49€/month",
+    cost: "49€/month<br/><br/>",
     id: 'enterprise-2016',
     interval: 'monthly'
 }, {
     type: planTypes.ENTERPRISE,
-    cost: "44.08€/month, billed annually",
+    cost: "44.08€/month, <br/> billed annually",
     id: 'enterprise-yearly-2016',
     interval: 'yearly'
 }, {
     type: planTypes.ENTERPRISE_PLUS,
-    cost: "149€/month",
+    cost: "149€/month<br/><br/>",
     id: 'plan_FG5JpvqjJwV1Uz',
     interval: 'monthly'
 }, {
     type: planTypes.ENTERPRISE_PLUS,
-    cost: "133.33€/month, billed annually",
+    cost: "133.33€/month, <br/> billed annually",
     id: 'plan_FG5LuPl9Mi1fmD',
     interval: 'yearly'
 }];
