@@ -33,7 +33,7 @@
     "pug": "^2.0.4"
   },
   "dependencies": {
-    "@tweenjs/tween.js": "^16.3.5",
+    "@tweenjs/tween.js": "^18.3.2",
     "jquery": "^3.1.0",
     "jquery-smooth-scroll": "^1.7.2",
     "jquery-ui": "^1.12.1",
