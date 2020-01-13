@@ -8,8 +8,9 @@ html(lang='fr')
 
     include _footer.pug
     include _modal.pug
-    script(src='script/main.js', charset='utf-8')
-    script(src="//instant.page/2.0.0", type="module", integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8")
+    script(src='script/main.js' defer charset='utf-8')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" defer integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous")
+    script(src="//instant.page/3.0.0" type="module" async integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1")
     noscript
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-PTHBZLF', height='0', width='0', style='display:none;visibility:hidden')
       
